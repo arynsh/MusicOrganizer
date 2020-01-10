@@ -1,0 +1,12 @@
+@* 1. name 2. list of albums 3. genre *@
+@using Music;
+
+<p>@Model.Name</p>
+<p>@Model.Genre</p>
+<ul>
+    @foreach (Album album in @Model.Albums)
+    {
+        <li>@album.Name</li>
+        <li>@album.Year</li>
+    }
+</ul>
